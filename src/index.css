@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.winning-line {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: draw-line 0.6s ease forwards;
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
